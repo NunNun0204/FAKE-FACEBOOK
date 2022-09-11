@@ -1,0 +1,279 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+
+body {
+    background: #efefef;
+    transition: background 0, 3s;
+}
+
+body::-webkit-scrollbar {
+    width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+    background: #052E39;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(transparent, #42E396, #2DE7FF);
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background-color: #42E396;
+}
+
+/******NAVIGATION BAR*********/
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #052E39;
+    padding: 5px 2%;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
+    border-bottom: 4px solid #fff;
+    ;
+    border-radius: 0 0 8px 8px;
+}
+
+.logo {
+    width: 100px;
+    margin-right: 15px;
+}
+
+.nav-left,
+.nav-right {
+    display: flex;
+    align-items: center;
+}
+
+.search-box {
+    background: #efefef;
+    width: 200px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+}
+
+.search-box i {
+    width: 20px;
+    font-size: 20px;
+    color: darkgray;
+}
+
+.search-box input {
+    width: 100%;
+    background: transparent;
+    padding: 10px;
+    outline: none;
+    border: 0;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+}
+
+.nav-right ul li {
+    list-style: none;
+    display: inline-block;
+}
+
+.nav-right ul li i {
+    width: 40px;
+    font-size: 25px;
+    margin: 0 5%;
+    color: #fff;
+}
+
+.nav-user-icon img {
+    width: 40px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.online {
+    position: relative;
+}
+
+.online::after {
+    content: " ";
+    width: 7px;
+    height: 7px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    background: #41db51;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.offline {
+    position: relative;
+}
+
+.offline::after {
+    content: " ";
+    width: 7px;
+    height: 7px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    background: rgb(210, 31, 31);
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+
+.nav-middle {
+    display: flex;
+    align-items: center;
+}
+
+.nav-middle ul li {
+    list-style: none;
+    display: inline-block;
+}
+
+
+.nav-middle li {
+    width: 110px;
+    display: inline-flex;
+    height: 100%;
+    text-align: center;
+    padding: 10px 10px;
+    border-radius: 13px;
+    text-decoration: none;
+}
+
+.nav-middle ul li i {
+    width: 40px;
+    font-size: 25px;
+    margin: 0 5%;
+    color: #fff;
+    font-size: 24px;
+
+}
+
+.nav-middle li:hover {
+    background-color: #626262;
+}
+
+.nav-middle li:first-child:hover {
+    background-color: transparent;
+}
+
+.user-profile {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.user-profile img,
+i {
+    width: 45px;
+    border-radius: 50%;
+    margin-right: 10px;
+
+    font-size: 30px;
+    color: #052E39;
+}
+
+.user-profile p {
+    margin-bottom: -5px;
+    font-weight: 1500;
+    color: #052E39;
+}
+
+.user-profile small {
+    font-size: 12px;
+    color: #626262;
+    ;
+}
+
+
+/*Footer*/
+.footer {
+    text-align: center;
+    color: #9a9a9a;
+    padding: 10px;
+    font-size: 13px;
+}
+
+/* GIAO DIỆN KẾT THÚC Ở ĐÂY */
+
+
+/* MENU XỔ */
+
+/* Settings-menu */
+.settings-menu {
+    position: absolute;
+    width: 90%;
+    max-width: 350px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    border-radius: 12px;
+    overflow: hidden;
+    top: 110%;
+    right: 2%;
+    max-height: 0;
+    transition: max-height 0, 3s;
+}
+
+.settings-menu-height {
+    max-height: 450px;
+}
+
+.user-profile a {
+    font-size: 12px;
+    text-decoration: none;
+    color: #1FD896;
+}
+
+.settings-menu-inner {
+    padding: 20px;
+}
+
+.settings-menu hr {
+    border: 0;
+    height: 1px;
+    background: #9a9a9a;
+    margin: 15px 0;
+}
+
+.settings-links {
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.settings-links .settings-icon {
+    width: 38px;
+    margin-right: 10px;
+    border-radius: 50%;
+    text-align: right;
+
+}
+
+.settings-links a {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+    color: #626262;
+}
+
+.settings-links a i {
+    color: #626262;
+}
+
+/*  */

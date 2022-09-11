@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/logo-circle.png" type="images/x-icon">
+    <title>HONG NHUNG - Beautiful Website </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav>
+        <div class="nav-left">
+            <img src="images/logo.png" class="logo">
+            <div class="search-box">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="Search...">
+            </div>
+        </div>
+
+        <div class="nav-middle">
+            <ul>
+                <li><i class="fas fa-home"></i></li>
+                <li><i class="fas fa-user-friends"></i></li>
+                <li><i class="fas fa-tv"></i></li>
+                <li><i class="fas fa-store-alt"></i></li>
+                <li><i class="fas fa-users"></i></li>
+            </ul>
+        </div>
+
+        <div class="nav-right">
+            <ul>
+                <li><i class="fa-solid fa-plus"></i></li>
+                <li><i class="fa-solid fa-comment"></i></li>
+                <li><i class="fa-solid fa-bell"></i></li>
+            </ul>
+            <div class="nav-user-icon online" onclick="settingsMenuToggle()">
+                <img src="images/profile-pic.png">
+            </div>
+        </div>
+
+        <!-- settings-menu------------------------ -->
+        <div class="settings-menu">
+            <div class="settings-menu-inner">
+                <div class="user-profile">
+                    <img src="images/profile-pic.png">
+                    <div>
+                        <p><b>Hồng Nhung</b></p>
+                        <a href="#">Xem trang của bạn</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="settings-links">
+                    <i class="fas fa-cog"></i>
+                    <a href="#" class="settings-icon">
+                        <b>Cài đặt & Quyền riêng tư</b>
+                        <i class="fas fa-angle-right"></i>
+                    </a>
+                </div>
+                <div class="settings-links">
+                    <i class="far fa-question-circle"></i>
+                    <a href="#" class="settings-icon">
+                        <b>Trợ giúp & hỗ trợ</b>
+                        <i class="fas fa-angle-right"></i>
+                    </a>
+                </div>
+                <div class="settings-links">
+                    <i class="fas fa-moon"></i>
+                    <a href="#" class="settings-icon">
+                        <b>Màn hình & trợ năng</b>
+                        <i class="fas fa-angle-right"></i>
+                    </a>
+                </div>
+                <div class="settings-links">
+                    <i class="fas fa-comment-medical"></i>
+                    <a href="#" class="settings-icon">
+                        <b>Đóng góp ý kiến</b>
+                        <i class="fas fa-angle-right"></i>
+                    </a>
+                </div>
+
+                <div class="settings-links">
+                    <i class="fas fa-sign-out-alt"></i>
+                    <a href="#" class="settings-icon">
+                        <b>Đăng xuất</b>
+                        <i class="fas fa-angle-right"></i>
+                    </a>
+                </div>
+
+                <div class="footer">
+                    <p>Cố lên! Cố lên! Tương lai nhà giàu xe sang &#128525;&#128525;</p>
+                </div>
+
+            </div>
+
+
+
+        </div>
+    </nav>
+
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/215b53afad.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
